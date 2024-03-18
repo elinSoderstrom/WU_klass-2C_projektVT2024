@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --brugerline_width: 30px;
+    --burgerline_height: 6px;
+    --burgerline_margin: 5px;
+
+    --background_color: rgb(216, 212, 205);
+
+}
+
+
+/* HÄR BÖRJAR START-SIDAN*/¨
+
+#start_body {
+
+    background-color: beige;
+    display:grid;
+    grid-template-rows: 500px 500px 500px 100px;
+    grid-template-areas: 
+    "start_div1"
+    "start_div2"
+    "start_div3"
+    "start_foot";
+    
+}
+
+#start_div1 {
+
+    background-color: burlywood;
+    grid-area: start_div1;
+    display: grid; 
+    grid-template-rows: 50px 450px ;
+    grid-template-areas:
+     "start_nav"
+     "start_tit";
+
+}
+
+#start_nav {
+
+    background-color: rgb(78, 131, 118);
+    grid-area: start_nav ;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;
+}
+
+#start_list {
+
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    list-style: none;
+
+}
+
+#start_title {
+
+    background-color: rgb(210, 144, 196);
+    grid-area: start_tit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#start_div2 {
+
+    background-color: darkseagreen;
+    grid-area: start_div2;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 500px;
+    grid-template-areas: "start_text start_img"
+
+}
+
+#selling_text {
+
+    background-color: darkorchid;
+    grid-area: start_text;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#shop_button {
+
+    background-color: brown;
+    height: 40px;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+#start_img {
+
+    background-color: coral;
+    grid-area: start_img;
+    display: flex;
+
+}
+
+#start_div3 {
+
+    background-color: cornflowerblue;
+    grid-area: start_div3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 450px 50px;
+    grid-template-areas: 
+    "news1 news2 news3"
+    "nycol nycol nycol"
+    ;
+    
+}
+
+#news_section1 {
+
+    grid-area: news1;
+    background-color: chartreuse;
+
+}
+
+#news_section2 {
+
+    grid-area: news2;
+    background-color: darkgreen;
+
+}
+
+#news_section3 {
+
+    grid-area: news3;
+    background-color: darkgoldenrod;
+
+}
+
+#news_title {
+
+    grid-area: nycol;
+    background-color: deeppink;
+
+}
+
+
+#start_footer {
+
+    background-color: brown;
+    grid-area: start_foot;
+    display: flex;
+    height: 75px;
+    
+}
+
+
+/* HÄR BÖRJAR SHOP-SIDAN*/
+
+#shop_body{
+
+    background-color: beige;
+    display: grid;
+    grid-template-rows: 1fr 20px 1.5fr 20px ;
+    grid-template-areas: 
+    "shop_div1"
+    "shop_div2"
+    "shop_div3"
+    "shop_foot";
+
+}
+
+
+
+
+
+/* HÄR BÖRJAR ABOUT-SIDAN*/
+
+#about_body{
+
+    background-color: beige;
+    display: grid;
+    grid-template-rows: 1fr 1fr 20px ;
+    grid-template-areas: 
+    "about_div1"
+    "about_div2"
+    "about_div3"
+    "about_foot";
+    
+}
+
+/* HÄR BÖRJAR COMMISIONS-SIDAN*/¨
+
+#commisions_body{
+
+    background-color: beige;
+    display: grid;
+    grid-template-rows: 1fr 1fr 20px ;
+    grid-template-areas: 
+    "com_div1"
+    "com_div2"
+    "com_div3"
+    "com_foot";
+    
+}
+
