@@ -432,29 +432,58 @@
 }
 
 
-/* HÄR BÖRJAR COMMISIONS-SIDAN*/¨
 
-#com_body {
+/* HÄR BÖRJAR COMMISIONS-SIDAN*/
 
+#c_body {
+
+    background-color: blue;
     display: grid;
-    grid-template-rows: 500px 1000px 100px;
-    grid-template-areas:
+    grid-template-rows: 500px 2500px 100px;
+    grid-template-areas: 
     "div1"
-    "div2" 
-    "foot";
-
+    "div2"
+    "footer";
 }
 
-#com_div1 {
-
-    grid-area: div1;
-    background-color: cadetblue;
+#div1 {
+    background-color: blueviolet;
+    display: grid;
+    grid-template-rows: 50px 450px;
+    grid-template-areas: 
+    "nav"
+    "tit";
 }
 
-#com_div2 {
+#nav {
 
+    grid-area: nav;
+    background-color: rgb(78, 131, 118);
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;
+   
+}
+
+#title {
+
+    grid-area: tit;
+
+    background-color: rgb(210, 144, 196);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div2 {
+
+    background-color: brown;
     grid-area: div2;
-    background-color: cornflowerblue;
 }
 
-#
+#footer {
+
+    background-color: cornflowerblue;
+    grid-area: footer;
+}
