@@ -14,6 +14,9 @@
 
 /* HÄR BÖRJAR START-SIDAN*/¨
 
+
+
+
 #start_body {
 
     background-color: beige;
@@ -439,7 +442,7 @@
 
     background-color: blue;
     display: grid;
-    grid-template-rows: 500px 2500px 100px;
+    grid-template-rows: 500px 1250px 100px;
     grid-template-areas: 
     "div1"
     "div2"
@@ -480,10 +483,103 @@
 
     background-color: brown;
     grid-area: div2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr;
+    grid-template-areas: 
+    "tit tit"
+    "ar2 ar1"
+    "txt img";
+}
+
+#title_wrapper {
+
+    grid-area: tit;
+    background-color: darkcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#article1 {
+
+    grid-area: ar1;
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 50px;
+
+}
+
+#article2 {
+
+    grid-area: ar2;
+    background-color: gold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 50px;
+    
+}
+
+#contact_txt {
+
+    grid-area: txt;
+    background-color: hotpink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+
+
+}
+
+#img_wrapper {
+
+    grid-area: img;
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #footer {
 
     background-color: cornflowerblue;
     grid-area: footer;
+
+
+}
+
+@media screen and (max-width:992px) {
+
+    #start_body {
+
+        grid-template-rows: 250px 250px 250px 50px;
+        grid-template-areas: 
+        "start_div1"
+        "start_div2"
+        "start_div3"
+        "start_foot";
+    }
+
+    #start_div1 {
+
+        grid-area: start_div1;
+        background-color: aquamarine;
+        display: grid;
+        grid-template-rows: 25px 225px;
+        grid-template-areas: 
+        "start_nav"
+        "start_tit";
+    }
+    
+    #start_nav {
+
+        background-color: hotpink;
+        
+    }
 }
