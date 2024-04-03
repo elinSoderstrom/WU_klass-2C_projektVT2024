@@ -35,6 +35,16 @@
 
 }
 
+.menu {
+
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    list-style: none;
+
+}
+
+
 #start_body {
 
     background-color: beige;
@@ -69,14 +79,6 @@
     align-items: center;
 }
 
-.menu {
-
-    display: flex;
-    width: 400px;
-    justify-content: space-between;
-    list-style: none;
-
-}
 
 #start_title {
 
@@ -256,7 +258,6 @@
     grid-template-areas: 
     "item1 item2 item3 item4"
     "item5 item6 item7 item8";
-
 
 }
 
@@ -695,8 +696,71 @@
 
     
     
+    #shop_body{
+
+        background-color: beige;
+        display: grid;
+        grid-template-rows: 400px 50px 3000px 75px ;
+        grid-template-areas: 
+        "shop_div1"
+        "shop_div2"
+        "shop_div3"
+        "shop_foot";
+    }
+
+
+    #shop_div3 {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "item1"
+        "item2"
+        "item3"
+        "item4"
+        "item5"
+        "item6"
+        "item7"
+        "item8";
+        margin: 100px;
+    
+    }
+    
+    #about_body{
   
+        grid-template-rows: 500px 2750px 100px ;
+        
+    }
 
+    #about_div2 {
 
+       
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr 3fr 4fr 3fr;
+        grid-template-areas: 
+        "about_art1"
+        "about_img1"
+        "about_art2" 
+        "about_img2";
+    }
 
+    #c_body {
+
+        grid-template-rows: 500px 1500px 100px;
+    
+    }
+
+    #div2 {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "tit"
+        "ar2" 
+        "ar1"
+        "txt "
+        "img";
+    }
+
+   
 }
