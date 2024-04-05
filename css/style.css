@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Herr+Von+Muellerhoff&display=swap');
+
 * {
 
     margin: 0;
@@ -9,6 +12,8 @@
     --burgerline_margin: 5px;
 
     --background_color: rgb(240, 218, 180);
+
+    --text_color: rgb(29, 59, 73);
 
 }
 
@@ -23,6 +28,11 @@
 
 }
 
+.footer_text {
+
+    color: var(--background_color);
+}
+
 .line {
 
     width: 25px;
@@ -30,7 +40,7 @@
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: white;
+    background-color: var(--background_color);
     border-radius: 20%;
 
 }
@@ -44,12 +54,104 @@
 
 }
 
+.menu_item {
+
+    color: var(--background_color);
+    font-family: crimson-text-regular;
+    
+}
+
+.log_in {
+
+    color: var(--background_color);
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+.page_title {
+
+    color: var(--background_color);
+    font-size: 150px;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.shop_item_text {
+
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: black;
+
+}
+
+.article_title {
+
+    font-size: 30px;
+    margin: 10px;
+}
+
+button {
+
+    
+    height: 35px;
+    width: 110px;
+    border-radius: 15px;
+    background:none;
+    border: 1.7px solid var(--text_color);
+    box-shadow: none;
+    font-size: 18px;
+    margin: 10px;
+    color: var(--text_color);
+}
+
+a {
+
+    text-decoration: none;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--text_color);
+    
+}
+
+
+p {
+
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 10px;
+    color: var(--text_color);
+}
+
+h1 {
+
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--text_color);
+
+}
+
+h2 {
+
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 10px;
+    color: var(--text_color);
+
+}
 
 #start_body {
 
     background-color: beige;
     display: grid;
-    grid-template-rows: 500px 500px 500px 100px;
+    grid-template-rows: 600px 500px 500px 100px;
     grid-template-areas: 
     "start_div1"
     "start_div2"
@@ -58,14 +160,17 @@
     
 }
 
+
 #start_div1 {
 
-    background-color: brown;
+    background-image: url(/img/surfing1.jpg);
+    background-size: 1300px ;
     grid-area: start_div1;
     display: grid; 
-    grid-template-rows: 50px 450px ;
+    grid-template-rows: 50px 1.5px 1fr ;
     grid-template-areas:
      "start_nav"
+     "line"
      "start_tit";
 
 }
@@ -77,6 +182,11 @@
     justify-content: space-between;
     margin: 10px;
     align-items: center;
+}
+
+.nav_line {
+    background-color: var(--background_color);
+    grid-area: "line";
 }
 
 
@@ -103,28 +213,26 @@
 
 #selling_text {
 
-    background-color: darkorchid;
+    background-color: var(--background_color);
     grid-area: start_text;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 10px;
+    padding: 50px;
 }
 
-#shop_button {
+#selling {
 
-    background-color: brown;
-    height: 40px;
-    width: 110px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
+    font-size: 40px;
 }
+
+
 
 #start_img {
 
-    background-color: coral;
+    background-color: var(--background_color);
     grid-area: start_img;
     display: flex;
 
@@ -136,7 +244,7 @@
     grid-area: start_div3;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 450px 50px;
+    grid-template-rows: 425px 75px;
     grid-template-areas: 
     "news1 news2 news3"
     "nycol nycol nycol"
@@ -168,10 +276,19 @@
 #news_title {
 
     grid-area: nycol;
-    background-color: deeppink;
+    background-color: var(--background_color);
     display: flex;
     align-items: center;
     justify-content: center;
+
+}
+
+#news_h3 {
+
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
 
 }
 
@@ -181,7 +298,6 @@
     background-color: brown;
     grid-area: start_foot;
     display: flex;
-    height: 75px;
 
 }
 
@@ -194,7 +310,7 @@
 
     background-color: beige;
     display: grid;
-    grid-template-rows: 500px 75px 750px 75px ;
+    grid-template-rows: 600px 100px 750px 100px ;
     grid-template-areas: 
     "shop_div1"
     "shop_div2"
@@ -206,19 +322,22 @@
 
 #shop_div1 {
 
-    background-color: burlywood;
     grid-area: shop_div1;
+    background-image: url(/img/surfing4.jpg);
+    background-size: 1300px;
+    background-position-y: -30px;
     display: grid; 
-    grid-template-rows: 50px 450px ;
+    grid-template-rows: 50px 1.5px 1fr;
     grid-template-areas:
-     "shop_nav"
-     "shop_tit";
+    "shop_nav"
+    "line"
+    "shop_tit";
 
 }
 
 #shop_nav {
 
-    background-color: rgb(78, 131, 118);
+    
     grid-area: shop_nav ;
     display: flex;
     justify-content: space-between;
@@ -228,7 +347,7 @@
 
 #shop_title {
 
-    background-color: rgb(210, 144, 196);
+    
     grid-area: shop_tit;
     display: flex;
     justify-content: center;
@@ -240,12 +359,20 @@
 
 #shop_div2 {
 
-    background-color: blueviolet;
+    background-color: var(--background_color);
     grid-area: shop_div2;
     display: flex;
     justify-content: center;
     align-items: center;
 
+}
+
+#products_title {
+
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 35px;
 }
 
 #shop_div3 {
@@ -346,7 +473,7 @@
 
     background-color: beige;
     display: grid;
-    grid-template-rows: 500px 1500px 100px ;
+    grid-template-rows: 600px 1400px 100px ;
     grid-template-areas: 
     "about_div1"
     "about_div2"
@@ -357,17 +484,20 @@
 #about_div1 {
 
     grid-area: about_div1;
-    background-color: burlywood;
+    background-image: url(/img/surfing2.jpg);
+    background-size: 1300px ;
+    background-position-y: -50px ;
     display: grid; 
-    grid-template-rows: 50px 450px ;
+    grid-template-rows: 50px 1.5px 1fr;
     grid-template-areas:
      "about_nav"
+     "line"
      "about_tit";
 }
 
 #about_nav {
 
-    background-color: rgb(78, 131, 118);
+    
     grid-area: about_nav ;
     display: flex;
     justify-content: space-between;
@@ -379,7 +509,7 @@
 
 #about_title {
 
-    background-color: rgb(210, 144, 196);
+    
     grid-area: about_tit;
     display: flex;
     justify-content: center;
@@ -387,9 +517,10 @@
     
 }
 
+
 #about_div2 {
 
-    background-color: yellow;
+    background-color: var(--background_color);
     grid-area: about_div2;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -402,7 +533,7 @@
 
 #about_img1 {
 
-    background-color: rgb(83, 205, 89);
+    background-color: var(--background_color);
     grid-area: about_img1;
     display: flex;
     align-items: center;
@@ -413,7 +544,7 @@
 
 #about_img2 {
 
-    background-color: rgb(202, 222, 111);
+    background-color: var(--background_color);
     grid-area: about_img2 ;
     display: flex;
     align-items: center;
@@ -423,24 +554,27 @@
 
 #about_article1 {
 
-    background-color: aqua;
+    background-color: var(--background_color);
     grid-area: about_art1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 75px;
+    padding: 60px;
 }
 
 #about_article2 {
 
-    background-color: aquamarine;
+    background-color: var(--background_color);
     grid-area: about_art2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 75px;
+    padding: 60px;
+    
     
 }
+
+
 
 
 
@@ -459,7 +593,7 @@
 
     background-color: blue;
     display: grid;
-    grid-template-rows: 500px 1250px 100px;
+    grid-template-rows: 600px 1100px 100px;
     grid-template-areas: 
     "div1"
     "div2"
@@ -467,18 +601,20 @@
 }
 
 #div1 {
-    background-color: blueviolet;
+    background-image: url(/img/surfing6.jpg);
+    background-size: 1300px;
+    background-position-y: -20px ;
     display: grid;
-    grid-template-rows: 50px 450px;
+    grid-template-rows: 50px 1.5px 1fr;
     grid-template-areas: 
     "nav"
+    "line"
     "tit";
 }
 
 #nav {
 
     grid-area: nav;
-    background-color: rgb(78, 131, 118);
     display: flex;
     justify-content: space-between;
     margin: 10px;
@@ -489,83 +625,105 @@
 #title {
 
     grid-area: tit;
-
-    background-color: rgb(210, 144, 196);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+
+
 #div2 {
 
-    background-color: brown;
+    background-color: var(--background_color);
     grid-area: div2;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px 1fr 1fr;
     grid-template-areas: 
     "tit tit"
-    "ar2 ar1"
+    "ar1 ar2"
     "txt img";
 }
 
 #title_wrapper {
 
     grid-area: tit;
-    background-color: darkcyan;
+    background-color: var(--background_color);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     
+}
+
+#tailor_title {
+
+    font-size: 35px;
 }
 
 #article1 {
 
     grid-area: ar1;
-    background-color: darkgray;
+    background-color: var(--background_color);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 50px;
+    padding-top: 10px;
+    padding-left: 100px ;
+    padding-right: 40px;
 
 }
 
 #article2 {
 
     grid-area: ar2;
-    background-color: gold;
+    background-color: var(--background_color);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 50px;
+    padding-top: 10px;
+    padding-left: 40px ;
+    padding-right: 100px;
     
 }
 
 #contact_txt {
 
     grid-area: txt;
-    background-color: hotpink;
+    background-color: var(--background_color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px;
+    margin: 40px;
+    padding-left: 70px;
 
 
+}
+
+#contact_title {
+
+    font-size: 35px;
 }
 
 #img_wrapper {
 
     grid-area: img;
-    background-color: cadetblue;
+    background-color: var(--background_color);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+#necklace_img {
+
+    height: 450px;
+    position: relative;
+    right: 25px;
+}
+
 #footer {
 
-    background-color: cornflowerblue;
+    background-color: rgb(73, 102, 140);
     grid-area: footer;
 
 
@@ -601,6 +759,7 @@
         left: 100%;
         top:50px;
         flex-direction: column;
+        align-items: center;
         background-color: var(--background_color);
         width: 100%;
         height: 200px;
@@ -615,6 +774,11 @@
 
     }
 
+    .menu_item {
+
+        color: rgb(6, 9, 67);
+        font-weight: 700;
+    }
 
 
     #start_body {
@@ -691,6 +855,7 @@
         grid-area: title; 
     
     }
+
 
 
 
