@@ -107,7 +107,6 @@ button {
     border-radius: 15px;
     background:none;
     border: 1.7px solid var(--text_color);
-    box-shadow: none;
     font-size: 18px;
     margin: 10px;
     color: var(--text_color);
@@ -451,7 +450,7 @@ footer {
 
 .shop_item_text_holder {
 
-    width: 235px;
+    width: 240px;
     display: flex;
     justify-content: space-between;
     margin-top: 5px;
@@ -1040,7 +1039,7 @@ footer {
     
     #about_body{
   
-        grid-template-rows: 500px 2900px 150px ;
+        grid-template-rows: 400px 2900px 150px ;
         
     }
 
