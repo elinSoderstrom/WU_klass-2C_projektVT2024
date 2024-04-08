@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Herr+Von+Muellerhoff&display=swap');
+
 
 * {
 
@@ -109,6 +109,10 @@ button {
     border: 1.7px solid var(--text_color);
     font-size: 18px;
     margin: 10px;
+    color: var(--text_color);
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    font-style: normal;
     color: var(--text_color);
 }
 
@@ -275,7 +279,7 @@ footer {
     
 }
 
-#news_section1 {
+#news_img1 {
 
     grid-area: news1;
     background-color: var(--background_color);
@@ -285,7 +289,7 @@ footer {
 
 }
 
-#news_section2 {
+#news_img2 {
 
     grid-area: news2;
     background-color: var(--background_color);
@@ -295,7 +299,7 @@ footer {
 
 }
 
-#news_section3 {
+#news_img3 {
 
     grid-area: news3;
     background-color: var(--background_color);
@@ -728,7 +732,7 @@ footer {
     font-size: 35px;
 }
 
-#article1 {
+#text_wrapper1 {
 
     grid-area: ar1;
     background-color: var(--background_color);
@@ -741,7 +745,7 @@ footer {
 
 }
 
-#article2 {
+#text_wrapper2 {
 
     grid-area: ar2;
     background-color: var(--background_color);
@@ -843,12 +847,14 @@ footer {
         transition: 0.3s;   
         padding: 20px;
         opacity: 70%;
+        display:none;
     }
 
 
     .menu.active {
 
         left: 0;
+        display: flex;
 
     }
 
@@ -935,7 +941,7 @@ footer {
         
     }
     
-    #news_section1 {
+    #news_img1 {
     
         grid-area: news1;
         background-color: var(--background_color);
@@ -945,7 +951,7 @@ footer {
     
     }
     
-    #news_section2 {
+    #news_img2 {
     
         grid-area: none;
         background-color: var(--background_color);
@@ -955,7 +961,7 @@ footer {
     
     }
     
-    #news_section3 {
+    #news_img3 {
     
         grid-area: none;
         background-color: var(--background_color);
@@ -1058,7 +1064,7 @@ footer {
     
     #c_body {
 
-        grid-template-rows: 500px 2000px 150px;
+        grid-template-rows: 400px 2000px 150px;
     
     }
 
@@ -1081,7 +1087,7 @@ footer {
         width: 500px;
     }
 
-    #article1 {
+    #text_wrapper1 {
 
         align-items: center;
         padding: 60px;
@@ -1089,7 +1095,7 @@ footer {
     
     }
     
-    #article2 {
+    #text_wrapper2 {
 
         align-items: center;
         padding: 60px;
