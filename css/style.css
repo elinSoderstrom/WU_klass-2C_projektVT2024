@@ -846,8 +846,9 @@ footer {
         height: 350px;
         transition: 0.3s;   
         padding: 20px;
-        opacity: 70%;
+        opacity: 60%;
         display:none;
+        
     }
 
 
@@ -855,6 +856,7 @@ footer {
 
         left: 0;
         display: flex;
+        
 
     }
 
